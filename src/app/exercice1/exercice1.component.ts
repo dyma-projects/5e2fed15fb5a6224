@@ -13,4 +13,10 @@ export class Exercice1Component implements OnInit {
   ngOnInit() {
   }
 
+  public updateCounter($event): void {
+    if ($event) {
+      this.compteur = $event.value;
+    }
+  }
+
 }
